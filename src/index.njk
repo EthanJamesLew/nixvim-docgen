@@ -1,0 +1,28 @@
+---
+title: My Vim Configuration
+layout: "base.njk"
+---
+{% block content %}
+
+<h2>Key Mappings</h2>
+<ul>
+{% for keymap in vimconfig.keymaps %}
+  <li>{{ keymap.key }}: {{ keymap.action }}</li>
+{% endfor %}
+</ul>
+
+<h2>Plugins</h2>
+<ul>
+{% for plugin in vimconfig.plugins %}
+  <li>{{ plugin.name }} - {{ plugin.description }}</li>
+{% endfor %}
+</ul>
+
+<h2>Global Settings</h2>
+<ul>
+{% for global in vimconfig.globals %}
+  <li>{{ global.name }} ({{ global.value }}): {{ global.description }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

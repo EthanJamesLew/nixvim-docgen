@@ -1,0 +1,48 @@
+{
+  "keymaps": [
+    {
+      "key": "<C-p>",
+      "action": "Open file explorer"
+    },
+    {
+      "key": "<C-n>",
+      "action": "New file"
+    },
+    {
+      "key": "<C-s>",
+      "action": "Save file"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "NERDTree",
+      "description": "Tree explorer plugin for vim."
+    },
+    {
+      "name": "vim-airline",
+      "description": "Lean & mean status/tabline for vim that's light as air."
+    },
+    {
+      "name": "vim-fugitive",
+      "description": "A Git wrapper so awesome, it should be illegal."
+    }
+  ],
+  "globals": [
+    {
+      "name": "syntax_enable",
+      "value": "true",
+      "description": "Enable syntax highlighting"
+    },
+    {
+      "name": "number",
+      "value": "true",
+      "description": "Show line numbers"
+    },
+    {
+      "name": "relativenumber",
+      "value": "true",
+      "description": "Show relative line numbers"
+    }
+  ]
+}
+
